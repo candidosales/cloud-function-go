@@ -1,6 +1,6 @@
 # API in GO to create Cloud Function
 
-> An API for deploying and calling Google Cloud Functions in Go.
+> An API for deploying Google Cloud Functions in Go.
 
 ## Create a private key to access the GCP
 
@@ -20,7 +20,7 @@ For this method, you'll need to [create a service account](https://cloud.google.
 go run *.go
 ```
 
-Send the below request to http://localhost:3000/:
+Send the below request to http://localhost:3000/
 
 ### Request
 
@@ -34,6 +34,14 @@ Send the below request to http://localhost:3000/:
 		"name": "package.json",
 		"content": "{\n  \"name\": \"sample-http\",\n  \"version\": \"0.0.1\"\n}"
 	}]
+}
+```
+
+### Response
+
+```json
+{
+  "message": "Created the Cloud Function"
 }
 ```
 
