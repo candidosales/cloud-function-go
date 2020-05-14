@@ -64,3 +64,7 @@ Send the below request to http://localhost:3000/
 - Deploying from the Google Cloud Functions API: https://cloud.google.com/functions/docs/deploying/api
 - Auto-generated Google APIs for Go: https://github.com/googleapis/google-api-go-client
 - gcloud functions deploy: https://cloud.google.com/sdk/gcloud/reference/functions/deploy#--runtime
+
+## Author
+
+- Cândido Sales - [@candidosales](https://twitter.com/candidosales)
