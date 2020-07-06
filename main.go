@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"strings"
 	"time"
 
@@ -19,19 +20,33 @@ import (
 )
 
 const (
-	JSONKeyPath = "./key.json"
-	projectID   = "YOUR-PROJECT"
-	region      = "us-central1"
+	projectID = "vendasta-hackathon"
+	region    = "us-central1"
 )
 
-var ErrFunctionIDIsEmpty = errors.New("function_id is empty")
+var (
+	ErrFunctionIDIsEmpty        = errors.New("function_id is empty")
+	ErrGoogleCredentialsIsEmpty = errors.New("GOOGLE_APPLICATION_CREDENTIALS variable is empty")
+	ErrProjectIDIsInvalid = errors.New("projectID constant is invalid. Please set the projectID")
+)
 
 func main() {
 	ctx := context.Background()
-	cfService, err := cloudfunctions.NewService(ctx, option.WithCredentialsFile(JSONKeyPath))
+
+	credentials := os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")
+	if credentials == "" {
+		log.Fatal(ErrGoogleCredentialsIsEmpty)
+	}
+
+	if projectID == "YOUR-PROJECT" {
+		log.Fatal(ErrProjectIDIsInvalid)
+	}
+
+	cfService, err := cloudfunctions.NewService(ctx, option.WithCredentialsFile(credentials))
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("Cloud Function Service started ... ")
 
 	appFiber := fiber.New()
 	appFiber.Use(logger.New())
@@ -44,8 +59,13 @@ func main() {
 		fiber:          appFiber,
 	}
 
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
 	appConfig.setupRoutes()
-	appConfig.fiber.Listen(3000)
+	appConfig.fiber.Listen(port)
 }
 
 func (app *AppConfig) createCloudFunction(createCFRequest *CreateCFRequest) (string, error) {

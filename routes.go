@@ -14,7 +14,9 @@ func (app *AppConfig) setupRoutes() {
 }
 
 func (app *AppConfig) ping(c *fiber.Ctx) {
-	c.JSON(fiber.Map{"pong": "ok"})
+	if err := c.JSON(fiber.Map{"pong": "ok"}); err != nil {
+		c.Next(err)
+	}
 }
 
 func (app *AppConfig) createCF(c *fiber.Ctx) {
@@ -31,24 +33,23 @@ func (app *AppConfig) createCF(c *fiber.Ctx) {
 		return
 	}
 
-	c.JSON(fiber.Map{"message": result})
+	if err := c.JSON(fiber.Map{"message": result}); err != nil {
+		c.Next(err)
+	}
 }
 
 func (app *AppConfig) getCF(c *fiber.Ctx) {
-	getCFRequest := &GetCFRequest{}
+	functionID := c.Query("function_id")
 
-	if err := c.BodyParser(&getCFRequest); err != nil {
-		fmt.Printf("err[%#v] \n", err)
-	}
-
-	result, err := app.getCloudFunction(getCFRequest.FunctionID)
-
+	result, err := app.getCloudFunction(functionID)
 	if err != nil {
 		c.Status(400).Send(err)
 		return
 	}
 
-	c.JSON(fiber.Map{"cloudFunction": result})
+	if err := c.JSON(fiber.Map{"cloudFunction": result}); err != nil {
+		c.Next(err)
+	}
 }
 
 func (app *AppConfig) setPolicy(c *fiber.Ctx) {
@@ -65,5 +66,7 @@ func (app *AppConfig) setPolicy(c *fiber.Ctx) {
 		return
 	}
 
-	c.JSON(fiber.Map{"policy": result})
+	if err := c.JSON(fiber.Map{"policy": result}); err != nil {
+		c.Next(err)
+	}
 }
