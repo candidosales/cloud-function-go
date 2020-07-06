@@ -60,7 +60,7 @@ Send the below request to http://localhost:8080/
 
 ```json
 {
-  "message": "Created the Cloud Function"
+   "message":"Created the Cloud Function"
 }
 ```
 
@@ -120,7 +120,7 @@ curl http://localhost:8080?function_id=trud_test
 
 ```json
 {
-	"function_id": "trud_test"
+   "function_id":"trud_test"
 }
 ```
 
@@ -128,18 +128,18 @@ curl http://localhost:8080?function_id=trud_test
 
 ```json
 {
-  "policy": {
-    "bindings": [
-      {
-        "members": [
-          "allUsers"
-        ],
-        "role": "roles/cloudfunctions.invoker"
-      }
-    ],
-    "etag": "BwWm/F4UOXk=",
-    "version": 1
-  }
+   "policy":{
+      "bindings":[
+         {
+            "members":[
+               "allUsers"
+            ],
+            "role":"roles/cloudfunctions.invoker"
+         }
+      ],
+      "etag":"BwWm/F4UOXk=",
+      "version":1
+   }
 }
 ```
 </details>
