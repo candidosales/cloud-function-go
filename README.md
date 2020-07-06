@@ -124,6 +124,7 @@ Send the below request to http://localhost:3000/
 ## Libraries
 
 - https://github.com/gofiber/fiber
+- https://github.com/awslabs/git-secrets
 
 ### Upgrade Go Fiber
 
