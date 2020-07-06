@@ -1,4 +1,4 @@
-# API in GO to create Cloud Function
+# 🐹 API in GO to create Cloud Function
 
 > An API for deploying Google Cloud Functions in Go.
 
