@@ -12,7 +12,6 @@
 
 - Fix the endpoint to get Cloud Function
 
-
 ## [1.0.0] - 2020-07-05
 
 ### Added
