@@ -169,3 +169,7 @@ go get -u github.com/gofiber/fiber
 ## Author
 
 - Cândido Sales - [@candidosales](https://twitter.com/candidosales)
+
+## ⚠️ Copyright and license
+
+Code and documentation copyright 2020-2030 the [Authors](https://github.com/candidosales/cloud-function-go/graphs/contributors) and Code released under the [MIT License](https://github.com/candidosales/cloud-function-go/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
