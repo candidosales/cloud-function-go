@@ -20,14 +20,14 @@ import (
 )
 
 const (
-	projectID = "vendasta-hackathon"
+	projectID = "YOUR-PROJECT"
 	region    = "us-central1"
 )
 
 var (
 	ErrFunctionIDIsEmpty        = errors.New("function_id is empty")
 	ErrGoogleCredentialsIsEmpty = errors.New("GOOGLE_APPLICATION_CREDENTIALS variable is empty")
-	ErrProjectIDIsInvalid = errors.New("projectID constant is invalid. Please set the projectID")
+	ErrProjectIDIsInvalid       = errors.New("projectID constant is invalid. Please set the projectID")
 )
 
 func main() {
