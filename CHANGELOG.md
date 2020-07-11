@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.0] - 2020-07-10
+
+### Added
+
+- Add delete method
+
 ## [1.0.1] - 2020-07-06
 
 ### Changed

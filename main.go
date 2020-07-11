@@ -225,6 +225,20 @@ func (app *AppConfig) getCloudFunction(functionID string) (*cloudfunctions.Cloud
 	return response, err
 }
 
+func (app *AppConfig) deleteCloudFunction(functionID string) (*cloudfunctions.Operation, error) {
+	if functionID == "" {
+		return nil, ErrFunctionIDIsEmpty
+	}
+
+	name := app.getLocation() + "/functions/" + functionID
+
+	response, err := app.cloudfunctions.Projects.Locations.Functions.Delete(name).Do()
+	if err != nil {
+		return nil, err
+	}
+	return response, err
+}
+
 func (app *AppConfig) setIAMPolicy(functionID string) (*cloudfunctions.Policy, error) {
 
 	if functionID == "" {

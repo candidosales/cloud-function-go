@@ -82,7 +82,7 @@ Send the below request to http://localhost:8080/
 - `function_id` - string representing the cloud function ID
 
 ```bash
-curl http://localhost:8080?function_id=trud_test
+curl -X GET http://localhost:8080?function_id=trud_test
 ```
 
 #### Response
@@ -104,6 +104,41 @@ curl http://localhost:8080?function_id=trud_test
       "timeout":"60s",
       "updateTime":"2020-06-01T00:44:07.102Z",
       "versionId":"3"
+   }
+}
+```
+
+</details>
+<details>
+  <summary>Delete a Cloud Function via function ID</summary>
+
+#### Accepts HTTP `DELETE`
+
+#### Path `/`
+
+#### Request
+
+- `function_id` - string representing the cloud function ID
+
+```bash
+curl -X DELETE http://localhost:8080?function_id=xdne_xpto
+```
+
+#### Response
+
+```json
+{
+   "cloudFunction":{
+      "metadata":{
+         "@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1",
+         "target":"projects/vendasta-hackathon/locations/us-central1/functions/xdne_xpto",
+         "type":"DELETE_FUNCTION",
+         "request":{
+            "@type":"type.googleapis.com/google.protobuf.Empty"
+         },
+         "updateTime":"2020-07-11T00:15:13Z"
+      },
+      "name":"operations/dmVuZGFzdGEtaGFja2F0aG9uL3VzLWNlbnRyYWwxL3hkbmVfeHB0by9FUzlUX1N1RzVPaw"
    }
 }
 ```
