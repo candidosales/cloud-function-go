@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0] - 2020-07-21
+
+### Changed
+
+- Upgrade GoFiber to 1.13.1
+- Change to Node 8 to Node 10. Node 8 is deprecated: https://firebase.google.com/support/faq?authuser=0#expandable-10
+
 ## [1.1.0] - 2020-07-10
 
 ### Added
