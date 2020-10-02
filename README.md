@@ -2,9 +2,11 @@
 
 > An API for deploying Google Cloud Functions in Go.
 
+![preview](https://i.imgur.com/QV5sReD.png)
+
 ## 🎯 Features
 
-- Create or update a Cloud Function;
+- Create, update or delete a Cloud Function;
 - Get a Cloud Function via function ID;
 - Set IAM Policy to enable unauthenticated users invoke the Cloud Function;
 
@@ -187,7 +189,9 @@ curl -X DELETE http://localhost:8080?function_id=xdne_xpto
 ### Upgrade Go Fiber
 
 ```bash
-go get -u github.com/gofiber/fiber
+go get -u github.com/gofiber/fiber/v2
+go get -u github.com/gofiber/fiber/v2/middleware/cors
+go get -u github.com/gofiber/fiber/v2/middleware/logger
 ```
 
 ## 📚 References

@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gofiber/cors"
-	"github.com/gofiber/fiber"
-	"github.com/gofiber/logger"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 	"google.golang.org/api/cloudfunctions/v1"
 	"google.golang.org/api/option"
 )
@@ -61,11 +61,14 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = ":8080"
 	}
 
 	appConfig.setupRoutes()
-	appConfig.fiber.Listen(port)
+	err = appConfig.fiber.Listen(port)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func (app *AppConfig) createCloudFunction(createCFRequest *CreateCFRequest) (string, error) {
