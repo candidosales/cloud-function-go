@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	projectID = "vendasta-hackathon"
+	projectID = "YOUR-PROJECT"
 	region    = "us-central1"
 )
 
