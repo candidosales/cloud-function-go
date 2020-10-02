@@ -5,6 +5,7 @@
 ### Changed
 
 - Upgrade GoFiber to 2.0.5
+- Update the README
 
 ## [1.1.1] - 2020-07-21
 

@@ -26,7 +26,6 @@ func (app *AppConfig) createCF(c *fiber.Ctx) error {
 	}
 
 	result, err := app.createCloudFunction(createCFRequest)
-
 	if err != nil {
 		return c.Status(503).Send([]byte(err.Error()))
 	}
@@ -64,7 +63,6 @@ func (app *AppConfig) setPolicy(c *fiber.Ctx) error {
 	}
 
 	result, err := app.setIAMPolicy(getCFRequest.FunctionID)
-
 	if err != nil {
 		return c.Status(400).Send([]byte(err.Error()))
 	}
