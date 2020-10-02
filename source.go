@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 	"google.golang.org/api/cloudfunctions/v1"
 )
 

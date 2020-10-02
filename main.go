@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/gofiber/cors"
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/logger"
 	"google.golang.org/api/cloudfunctions/v1"
 	"google.golang.org/api/option"

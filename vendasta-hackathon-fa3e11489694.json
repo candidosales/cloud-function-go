@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vendasta-hackathon",
+  "private_key_id": "fa3e114896948672eb08a0374186a2d998bb4a83",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1kTo1+jlyNUV8\nx3U0IoytdIvFeldBvpkRrVwdq76P3b6pXE7VRd2EhMvzh4RvjEdElR6FCqCG60j3\nKPRLBZSR/qLOIJiNlM4QrEpVRsZuTKGhwU8AtCEFLpg3oIXs5mY805R7qKsKxVcN\nATE8g0uqq8GATc4T9yrkq98jKJ3Qlx6G1kigZRcRi9liSZm4LQFxfnriVGSE8hbc\nI8IkvFEtjfVOPqkX4afrMiR1BR/L0xeDi288Xd7dM883tu6QAIuE/bV7z7NYuMLQ\ns+LRYDq5weWHVDkDX3wWOh0d45ozOomUbyBMTp3K5E9EZKYkR5nQsMOlyFVe43PH\nTXvuxrQvAgMBAAECggEAPaWTAZu1YIEU2EJymWJ3qDcPc9vPf4uCtj1JrutOltM/\ntooYXBJOHX3nL4beIO+cjP0icSKEEXsWeZCmrUg2QwGVbm4jzcJt2rxcuqp+mhmb\nsWuMct017uf8l7qBbkdmBBYEbp38gPoyzcAPYw/jI44Qc4s3QpEjt6NhbjMOrjDm\nmXbLeYRg0bPjf2/PxOekYh0raXUNiV6MMrHiWCOfB7NfAIRbgsvbJ1T5p8IDLUvK\ne+OrFUpSRjkpibBdcG78qgEVXRrt6WFfKLT8fwEc5Wxt9EZSEpj2HOfHjv+Wr+XJ\nn//dWfp+n4l1mywD6RVzrS5YZNq8qq0N2aud7VWWSQKBgQDe2GsZmdz3nFmrL5gs\n3rEEOly12aM3Y6t5Ucun0+RBMsNEv5rjCaE1I7oQBsmWzpHjmI7DIdrUX6vUxCBl\n//a3lA1n2jKGLk2gopfRnDEuXe1iGE7m1CNSerkyH9nSOAammvH5aaI2mg/XgkZL\nAm9GwiGroPDklVL9uDadqNzI6QKBgQDQlKM2hejG5fnArf+XrIBdB85e6l8ZzvmY\nb2qHAHRNTuqSsSCLGOsTxplVrvIDoJnPVDnNtybCiGXxqdz81Tk+dXdDJ2rsTzDB\n6w7IVJc7RO//+KN35fjGuBauwWrhQe9LY6Nvm/7Gzp+or9YDOPoiWX7ZHqDPQS7w\nqF/diBblVwKBgQC80Y9d79slCxuHSxqb2k0PEgyAIVqEkjU25LG1EHs1Kzf9RoSM\nnxozFoSPE9E3sOw4dolwmXz7udy0uUHia1G3FwGM33sz6oPn+hy9hKS/buK23XXt\nbA5J0qac7BP6ZXJtNJiXBoRl04Bc0IuS/wseX1t8OzAh3sylIrNUP0JkEQKBgQCT\nRtCz1/vULWCbV4Do1OnSRofGZ1D9RTLiGpGqf3yfdcCWEbG75b1fOlTctmm2e/j+\n9ybVhaQ9qdfpupoKgHgqDQFIDpYmA4iW9GV8uJYMSJH6ONMb/usZTbTecj4Ijejs\nX49waEKOmCkOEBJaNioQhQbXQhQkI4+EaC9Ami4ogwKBgAzPzundZnjq3MuhcMxi\n8KaA6cvYjdvx4kVa0DpsV+Mjly8gcV6eD8+8m0hS/cZ5y7iTQ7pRtEJpmZ3YXX7k\n5XZudnoLqrn3AtFRIXoxs8zTusU7GhJN37X/RJ06t+d7qPcQdZc5mYPMZB+bctQl\nJzVTDoS8OGahqexW+UBiOcC9\n-----END PRIVATE KEY-----\n",
+  "client_email": "server-go@vendasta-hackathon.iam.gserviceaccount.com",
+  "client_id": "115355744893293538560",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/server-go%40vendasta-hackathon.iam.gserviceaccount.com"
+}
