@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0] - 2021-05-27
+
+### Changed
+
+- Upgrade GoFiber to 2.10.0
+- Update Go Version `go mod edit -go=1.15`
+
 ## [1.2.0] - 2020-10-02
 
 ### Changed
