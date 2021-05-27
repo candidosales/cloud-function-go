@@ -6,6 +6,7 @@
 
 - Upgrade GoFiber to 2.10.0
 - Update Go Version `go mod edit -go=1.15`
+- Update README
 
 ## [1.2.0] - 2020-10-02
 
