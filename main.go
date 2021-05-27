@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	projectID = "YOUR-PROJECT"
+	projectID = "vendasta-hackathon"
 	region    = "us-central1"
 )
 
@@ -199,7 +199,7 @@ func (app *AppConfig) buildRequestBody(sourceUploadURL string, name string) *clo
 		Name:              name,                           // Required - Name must start with a letter followed by up to 62 letters, numbers or hyphens, and cannot end with a hyphen
 		AvailableMemoryMb: 128,                            // Optional
 		EntryPoint:        "helloWorld",                   // Required
-		Runtime:           "nodejs10",                      // Required
+		Runtime:           "nodejs10",                     // Required
 		HttpsTrigger:      &cloudfunctions.HttpsTrigger{}, // Required
 		SourceUploadUrl:   sourceUploadURL,                // Required
 		IngressSettings:   "ALLOW_ALL",                    // Optional

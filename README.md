@@ -2,7 +2,7 @@
 
 > An API for deploying Google Cloud Functions in Go.
 
-![preview](https://i.imgur.com/QV5sReD.png)
+![preview](./images/preview.png)
 
 ## 🎯 Features
 
